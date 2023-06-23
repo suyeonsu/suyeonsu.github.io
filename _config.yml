@@ -18,12 +18,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 수연수 작업장 # the main title
+title: "수연수 작업장" # the main title
 
-tagline: 대환장 삽질파티 총망라 # it will display as the sub-title
+tagline: "대환 삽질파티 총망라" # it will display as the sub-title
 
-description: >- # used by seo meta and the atom feed
-  공부, 삽질, 회고를 기록합니다.
+description:  # used by seo meta and the atom feed
+  "공부, 삽질, 회고를 기록합니다."
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://suyeonsu.github.io"
