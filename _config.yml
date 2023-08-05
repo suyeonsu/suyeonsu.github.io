@@ -93,7 +93,7 @@ comments:
   giscus:
     repo: suyeonsu/suyeonsu.github.io
     repo_id: R_kgDOI-tfkA
-    category: General
+    category: Announcements
     category_id: DIC_kwDOI-tfkM4CYXnR
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
