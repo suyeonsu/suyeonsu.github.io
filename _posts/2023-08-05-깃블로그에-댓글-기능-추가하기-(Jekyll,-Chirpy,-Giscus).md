@@ -2,9 +2,15 @@
 title: 깃블로그에 댓글 기능 추가하기 (Jekyll, Chirpy, Giscus)
 date: 2023-08-05 23:20 +09:00
 categories: 블로그
-image:
-  path: /assets/img/thumbnails/298390507-55e58e3a-3c7f-4d38-a811-8d3c5e941b30.png
 tags: [Chirpy, Jekyll, Giscus]
+math: true
+toc: true
+author: kimsen
+img_path: /assets/img/thumbnails/
+pin: false
+image:
+  path: 298390507-55e58e3a-3c7f-4d38-a811-8d3c5e941b30.png
+description: 깃허브 블로그 댓글 기능 추가하기 (Jekyll, Chirpy, Giscus), 깃허브 블로그, Github blog, Chirpy, Jekyll, Giscus, 댓글 기능
 ---
 
 ## 댓글 기능을 넣자 💬
