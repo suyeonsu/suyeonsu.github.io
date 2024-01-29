@@ -23,7 +23,7 @@ title: 수연수 작업장 # the main title
 tagline: 대환장 삽질파티 총망라 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  개발자 수연수의 기술 블로그 입니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://suyeonsu.github.io"
