@@ -1,5 +1,5 @@
 ---
-title: "[프로그래머스] 무인도 여행 - Java"
+title: "[프로그래머스] 무인도 여행 - Java, Python"
 date: 2024-02-01 23:45 +09:00
 categories: [알고리즘, 프로그래머스]
 tags: [프로그래머스, bfs]
@@ -11,7 +11,7 @@ pin: false
 image:
   path: "무인도 여행.png"
   alt: "프로그래머스 무인도 여행"
-description: 프로그래머스 무인도 여행 자바, 무인도 여행 자바, Programmers, Java, 프로그래머스, 무인도 여행, 자바
+description: 프로그래머스 무인도 여행 자바, 무인도 여행 파이썬, Programmers, Java, Python, 프로그래머스, 무인도 여행, 자바, 파이썬
 ---
 
 ## 문제
@@ -21,6 +21,7 @@ description: 프로그래머스 무인도 여행 자바, 무인도 여행 자바
 <br>
 
 ## 아이디어
+> 문제 설명은 자바를 기준으로 합니다. 풀이 과정은 동일하나 파이썬 코드는 [여기](#파이썬)를 참고해주세요.
 
 > **bfs 탐색**으로 각각의 섬을 방문하여 그 합을 구해 저장한다.  
 > 참고로 새로운 섬 탐색을 시작할 때 visited 배열을 초기화하면 안된다. 
@@ -81,6 +82,7 @@ description: 프로그래머스 무인도 여행 자바, 무인도 여행 자바
 
 ## 전체 코드 
 
+#### 자바
 ```java
 import java.util.*;
 
@@ -133,6 +135,37 @@ class Solution {
         return !answer.isEmpty() ? answer.stream().mapToInt(Integer::intValue).sorted().toArray() : new int[] {-1};
     }
 }
+```
+
+#### 파이썬
+```python
+from collections import deque
+
+def solution(maps):
+    answer = []
+    n, m = len(maps), len(maps[0])
+    visited = [[0]*m for _ in range(n)]
+    dx = [-1, 0, 1, 0]
+    dy = [0, -1, 0, 1]
+
+    for i in range(n):
+        for j in range(m):
+            if maps[i][j] != 'X' and not visited[i][j]:
+                dq = deque([(i, j)])
+                visited[i][j] = 1
+                s = eval(maps[i][j])
+                while dq:
+                    x, y = dq.popleft()
+                    for k in range(4):
+                        nx = x+dx[k]
+                        ny = y+dy[k]
+                        if 0 <= nx < n and 0 <= ny < m and not visited[nx][ny] and maps[nx][ny] != 'X':
+                            dq.append((nx, ny))
+                            visited[nx][ny] = 1
+                            s += eval(maps[nx][ny])
+                answer.append(s)
+                
+    return sorted(answer) if answer else [-1]
 ```
 
 <br>
