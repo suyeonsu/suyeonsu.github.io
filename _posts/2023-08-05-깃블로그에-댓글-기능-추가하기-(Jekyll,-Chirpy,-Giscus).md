@@ -1,7 +1,7 @@
 ---
 title: 깃블로그에 댓글 기능 추가하기 (Jekyll, Chirpy, Giscus)
 date: 2023-08-05 23:20 +09:00
-categories: 블로그
+categories: [Tips, Jekyll]
 tags: [Chirpy, Jekyll, Giscus]
 math: true
 toc: true
