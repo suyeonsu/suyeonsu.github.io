@@ -1,6 +1,7 @@
 ---
 title: "Intellij 창전환(alt + tab) 자동 빌드 해제하는 온갖 방법"
 date: 2024-03-12 12:22 +09:00
+last_modified_at: 2024-03-13 03:00 +09:00
 categories: [Tips, Intellij]
 tags: [intellij]
 math: true
