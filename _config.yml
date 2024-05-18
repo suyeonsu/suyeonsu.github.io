@@ -118,9 +118,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: suyeonsu/suyeonsu.github.io # <gh-username>/<repo>
-    repo_id: R_kgDOL9SrKw
+    repo_id: R_kgDOL9U0lw
     category: Announcements
-    category_id: DIC_kwDOL9SrK84Cfc1u
+    category_id: DIC_kwDOL9U0l84Cfc3b
     mapping: pathname # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: top # optional, default to 'bottom'
